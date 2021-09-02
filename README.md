@@ -12,3 +12,8 @@
 ## Pharming attack
 1. Obtain all other client devices’ IP/MAC addresses in a connected Wi Fi network
 2. DNS spoofing attack for web services
+
+## Solution
+1. Use static ARP⁠: The ARP protocol lets us define a static ARP entry for an IP address, and prevent devices from listening on ARP responses for that address. For example, if a workstation always connects to the same router, we can define a static ARP entry for that router, preventing an attack.
+2. Use packet filtering⁠: Packet filtering solutions can identify poisoned ARP packets by seeing that they contain conflicting source information, and stop them before reaching devices on our network.
+3. Use VPN⁠: VPN allows devices to connect to the Internet through an encrypted tunnel. This makes all communication encrypted, and worthless for the ARP spoofing attacker.
